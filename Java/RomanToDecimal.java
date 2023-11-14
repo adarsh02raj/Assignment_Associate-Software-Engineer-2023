@@ -26,7 +26,7 @@ public class RomanToDecimal {
     }
 
 
-    //function for provide decimal value of asked roman character
+    //function for providing the decimal value of asked roman character
     public static int getDecimalValue(char ch){
         switch (ch) {
             case 'I':
@@ -43,6 +43,7 @@ public class RomanToDecimal {
                 return 500;
             case 'M':
                 return 1000;
+//Below case not compulsory It's just for the user if put the small letter.
             case 'i':
                 return 1;
             case 'v':
