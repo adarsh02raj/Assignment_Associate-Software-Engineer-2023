@@ -11,16 +11,16 @@ body{
 .calculator{
     text-align: center;
     background-color: gray;
-    width: 270px;
-    height: 325px;
+    width: 250px;
+    height: 300px;
     border-radius: 10px;
 }
 input{
     padding-left: 10px;
     margin-top: 10px;
     margin-bottom: 2px;
-    width: 75%;
-    height: 35px;
+    width: 58%;
+    height: 50px;
     border-radius: 10px;
     border: 0px;
 }
@@ -34,14 +34,13 @@ button{
     height: 50px;
     border-radius: 10px;
 }
-.equal{
-    width: 79%;
-}
 .operator{
     background-color: orange;
 }
 .AC{
     background-color: #139489;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 button:hover{
     box-shadow: rgba(255, 174, 0, 0.99) 0px 3px 8px;
