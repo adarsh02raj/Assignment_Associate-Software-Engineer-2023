@@ -1,1 +1,73 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Customer Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h4 class="heading">Customer Survey Form</h4>
+        <div class="sub-container">
+            <form id="surveyForm" onsubmit="return submitForm()">
+                <div class="name">
+                    <label for="firstName">First Name*</label><br>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="name">
+                    <label for="lastName">Last Name*</label><br>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="dob">
+                    <label for="dob">Date of Birth*</label><br>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="country">
+                    <label for="country">Country*</label><br>
+                    <select id="country" required>
+                        <option value="">Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="germany">Germany</option>
+                        <option value="france">France</option>
+                        <option value="australia">Australia</option>
+                        <option value="japan">Japan</option>
+                        <option value="brazil">Brazil</option>
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                    </select>
+                </div>
+                <div class="gender">
+                    <label>Gender*</label><br>
+                    <input type="checkbox" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="checkbox" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="checkbox" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="profession">
+                    <label for="profession">Profession*</label><br>
+                    <input type="text" id="profession" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="mobile">
+                    <label for="mobile">Mobile Number*</label><br>
+                    <input type="tel" id="mobile" required>
+                </div>
+                <div class="submit-reset">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
